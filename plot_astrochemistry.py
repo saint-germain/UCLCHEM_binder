@@ -18,4 +18,4 @@ if args.name[-1]=='plot':
     ax.annotate('O$_2$',xy=(20,5e-9),color='k')
     ax.hlines(1e-9,10,1e7,colors='k')
     ax.annotate('H$_2$O',xy=(20,1.5e-9),color='k')
-plt.show()
+plt.savefig('evolution.png')
