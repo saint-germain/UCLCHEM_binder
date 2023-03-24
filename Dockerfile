@@ -16,5 +16,5 @@ RUN apt-get update && \
 RUN git clone https://github.com/uclchem/UCLCHEM.git && \
     cd UCLCHEM  && \
     pip install -r requirements.txt  && \
-    pip install . && \
-    mv ../*.py .
+    pip install . 
+RUN ls
