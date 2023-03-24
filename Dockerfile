@@ -16,5 +16,6 @@ RUN apt-get update && \
 RUN git clone https://github.com/uclchem/UCLCHEM.git && \
     cd UCLCHEM  && \
     pip install -r requirements.txt  && \
-    pip install . 
-RUN ls
+    pip install . && \
+    wget https://raw.githubusercontent.com/saint-germain/UCLCHEM_binder/main/plot_astrochemistry.py && \
+    wget https://raw.githubusercontent.com/saint-germain/UCLCHEM_binder/main/run_astrochemistry.py
