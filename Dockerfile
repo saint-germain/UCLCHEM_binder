@@ -10,7 +10,7 @@ VOLUME /tmp/.X11-unix /tmp/.X11-unix rw
 
 # libav-tools for matplotlib anim
 RUN apt-get update && \
-    apt-get install -y gfortran && \
+    apt-get install -y gfortran python3-tk x11-apps x11-xserver-utils python3-pyqt5 && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 RUN git clone https://github.com/uclchem/UCLCHEM.git && \
